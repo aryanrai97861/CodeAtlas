@@ -1,0 +1,22 @@
+{
+  "name": "@code-atlas/analyzer",
+  "version": "1.0.0",
+  "description": "Symbol resolution and static analysis for Code Atlas",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "code-atlas-analyze": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@code-atlas/parser": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}
