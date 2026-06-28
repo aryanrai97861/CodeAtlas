@@ -1,0 +1,22 @@
+{
+  "name": "@code-atlas/parser",
+  "version": "1.0.0",
+  "description": "AST parser and repository scanner for Code Atlas",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "code-atlas": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "ts-morph": "^21.0.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6"
+  }
+}

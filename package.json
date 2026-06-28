@@ -1,0 +1,11 @@
+{
+  "name": "code-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Code Atlas - Static Code Analysis Engine",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test"
+  },
+  "packageManager": "pnpm@10.12.4"
+}
