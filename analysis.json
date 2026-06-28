@@ -1,0 +1,3680 @@
+[
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/eslint.config.js",
+    "imports": [
+      {
+        "moduleSpecifier": "@eslint/js",
+        "defaultImport": "js",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "globals",
+        "defaultImport": "globals",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "eslint-plugin-react-hooks",
+        "defaultImport": "reactHooks",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "eslint-plugin-react-refresh",
+        "defaultImport": "reactRefresh",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "typescript-eslint",
+        "defaultImport": "tseslint",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "eslint/config",
+        "namedImports": [
+          {
+            "name": "defineConfig"
+          },
+          {
+            "name": "globalIgnores"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": true,
+        "name": "defineConfig([\n  globalIgnores(['dist']),\n  {\n    files: ['**/*.{ts,tsx}'],\n    extends: [\n      js.configs.recommended,\n      tseslint.configs.recommended,\n      reactHooks.configs.flat.recommended,\n      reactRefresh.configs.vite,\n    ],\n    languageOptions: {\n      globals: globals.browser,\n    },\n  },\n])"
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/vite.config.ts",
+    "imports": [
+      {
+        "moduleSpecifier": "vite",
+        "namedImports": [
+          {
+            "name": "defineConfig"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@vitejs/plugin-react",
+        "defaultImport": "react",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@tailwindcss/vite",
+        "defaultImport": "tailwindcss",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "path",
+        "defaultImport": "path",
+        "namedImports": []
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": true,
+        "name": "defineConfig({\n  plugins: [react(), tailwindcss()],\n  resolve: {\n    alias: {\n      \"@\": path.resolve(__dirname, \"./src\"),\n    },\n  },\n  server: {\n    proxy: {\n      \"/api\": \"http://localhost:8000\",\n    },\n  },\n})"
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react-router-dom",
+        "namedImports": [
+          {
+            "name": "BrowserRouter"
+          },
+          {
+            "name": "Routes"
+          },
+          {
+            "name": "Route"
+          },
+          {
+            "name": "Navigate"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/layout/MainLayout",
+        "defaultImport": "MainLayout",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/components/auth/ProtectedRoute",
+        "defaultImport": "ProtectedRoute",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/pages/LoginPage",
+        "defaultImport": "LoginPage",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/pages/RegisterPage",
+        "defaultImport": "RegisterPage",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/pages/DashboardPage",
+        "defaultImport": "DashboardPage",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/pages/JobsPage",
+        "defaultImport": "JobsPage",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/pages/RecruitersPage",
+        "defaultImport": "RecruitersPage",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/pages/ResumePage",
+        "defaultImport": "ResumePage",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/pages/SettingsPage",
+        "defaultImport": "SettingsPage",
+        "namedImports": []
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "App",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/main.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "StrictMode"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "react-dom/client",
+        "namedImports": [
+          {
+            "name": "createRoot"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "./index.css",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "./App",
+        "defaultImport": "App",
+        "namedImports": []
+      }
+    ],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts",
+    "imports": [
+      {
+        "moduleSpecifier": "axios",
+        "defaultImport": "axios",
+        "namedImports": []
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": true,
+        "name": "api"
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": [
+      {
+        "name": "api",
+        "isExported": false,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts",
+    "imports": [
+      {
+        "moduleSpecifier": "clsx",
+        "namedImports": [
+          {
+            "name": "clsx"
+          },
+          {
+            "name": "ClassValue"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "tailwind-merge",
+        "namedImports": [
+          {
+            "name": "twMerge"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "cn",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "inputs",
+            "type": "ClassValue[]"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/DashboardPage.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useEffect"
+          },
+          {
+            "name": "useState"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/api",
+        "defaultImport": "api",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "Briefcase"
+          },
+          {
+            "name": "TrendingUp"
+          },
+          {
+            "name": "Building2"
+          },
+          {
+            "name": "Users"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "recharts",
+        "namedImports": [
+          {
+            "name": "BarChart"
+          },
+          {
+            "name": "Bar"
+          },
+          {
+            "name": "XAxis"
+          },
+          {
+            "name": "YAxis"
+          },
+          {
+            "name": "Tooltip"
+          },
+          {
+            "name": "ResponsiveContainer"
+          },
+          {
+            "name": "CartesianGrid"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/types",
+        "namedImports": [
+          {
+            "name": "DashboardStats"
+          },
+          {
+            "name": "TopCompany"
+          },
+          {
+            "name": "TopSkill"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "StatCard",
+        "isAsync": false,
+        "isExported": false,
+        "parameters": [
+          {
+            "name": "{\n  icon: Icon,\n  label,\n  value,\n  gradient,\n  delay,\n}",
+            "type": "{\n  icon: React.ElementType;\n  label: string;\n  value: number | string;\n  gradient: string;\n  delay: number;\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DashboardPage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useEffect"
+          },
+          {
+            "name": "useState"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/store/jobStore",
+        "namedImports": [
+          {
+            "name": "useJobStore"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/badge",
+        "namedImports": [
+          {
+            "name": "Badge"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/button",
+        "namedImports": [
+          {
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/input",
+        "namedImports": [
+          {
+            "name": "Input"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/select",
+        "namedImports": [
+          {
+            "name": "Select"
+          },
+          {
+            "name": "SelectContent"
+          },
+          {
+            "name": "SelectItem"
+          },
+          {
+            "name": "SelectTrigger"
+          },
+          {
+            "name": "SelectValue"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/switch",
+        "namedImports": [
+          {
+            "name": "Switch"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/label",
+        "namedImports": [
+          {
+            "name": "Label"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "Search"
+          },
+          {
+            "name": "MapPin"
+          },
+          {
+            "name": "Briefcase"
+          },
+          {
+            "name": "ExternalLink"
+          },
+          {
+            "name": "ChevronLeft"
+          },
+          {
+            "name": "ChevronRight"
+          },
+          {
+            "name": "Calendar"
+          },
+          {
+            "name": "IndianRupee"
+          },
+          {
+            "name": "Filter"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/sheet",
+        "namedImports": [
+          {
+            "name": "Sheet"
+          },
+          {
+            "name": "SheetContent"
+          },
+          {
+            "name": "SheetTrigger"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "date-fns",
+        "namedImports": [
+          {
+            "name": "format"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/types",
+        "namedImports": [
+          {
+            "name": "Job"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "JobCard",
+        "isAsync": false,
+        "isExported": false,
+        "parameters": [
+          {
+            "name": "{ job }",
+            "type": "{ job: Job }"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "FilterPanel",
+        "isAsync": false,
+        "isExported": false,
+        "parameters": [],
+        "returnType": "any"
+      },
+      {
+        "name": "JobsPage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useState"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "react-router-dom",
+        "namedImports": [
+          {
+            "name": "Link"
+          },
+          {
+            "name": "useNavigate"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/store/authStore",
+        "namedImports": [
+          {
+            "name": "useAuthStore"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/button",
+        "namedImports": [
+          {
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/input",
+        "namedImports": [
+          {
+            "name": "Input"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/label",
+        "namedImports": [
+          {
+            "name": "Label"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "Sparkles"
+          },
+          {
+            "name": "Mail"
+          },
+          {
+            "name": "Lock"
+          },
+          {
+            "name": "AlertCircle"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "LoginPage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useEffect"
+          },
+          {
+            "name": "useState"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/api",
+        "defaultImport": "api",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/components/ui/input",
+        "namedImports": [
+          {
+            "name": "Input"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/badge",
+        "namedImports": [
+          {
+            "name": "Badge"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/table",
+        "namedImports": [
+          {
+            "name": "Table"
+          },
+          {
+            "name": "TableBody"
+          },
+          {
+            "name": "TableCell"
+          },
+          {
+            "name": "TableHead"
+          },
+          {
+            "name": "TableHeader"
+          },
+          {
+            "name": "TableRow"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "Search"
+          },
+          {
+            "name": "Mail"
+          },
+          {
+            "name": "Building2"
+          },
+          {
+            "name": "ExternalLink"
+          },
+          {
+            "name": "Users"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/types",
+        "namedImports": [
+          {
+            "name": "Recruiter"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "RecruitersPage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useState"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "react-router-dom",
+        "namedImports": [
+          {
+            "name": "Link"
+          },
+          {
+            "name": "useNavigate"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/store/authStore",
+        "namedImports": [
+          {
+            "name": "useAuthStore"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/button",
+        "namedImports": [
+          {
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/input",
+        "namedImports": [
+          {
+            "name": "Input"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/label",
+        "namedImports": [
+          {
+            "name": "Label"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "Sparkles"
+          },
+          {
+            "name": "Mail"
+          },
+          {
+            "name": "Lock"
+          },
+          {
+            "name": "User"
+          },
+          {
+            "name": "AlertCircle"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "RegisterPage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useState"
+          },
+          {
+            "name": "useCallback"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "react-dropzone",
+        "namedImports": [
+          {
+            "name": "useDropzone"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/api",
+        "defaultImport": "api",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/components/ui/badge",
+        "namedImports": [
+          {
+            "name": "Badge"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/button",
+        "namedImports": [
+          {
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/progress",
+        "namedImports": [
+          {
+            "name": "Progress"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "Upload"
+          },
+          {
+            "name": "FileText"
+          },
+          {
+            "name": "CheckCircle"
+          },
+          {
+            "name": "AlertCircle"
+          },
+          {
+            "name": "Sparkles"
+          },
+          {
+            "name": "Target"
+          },
+          {
+            "name": "TrendingUp"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/types",
+        "namedImports": [
+          {
+            "name": "Resume"
+          },
+          {
+            "name": "MatchResult"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "ResumePage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useEffect"
+          },
+          {
+            "name": "useState"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/api",
+        "defaultImport": "api",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/components/ui/button",
+        "namedImports": [
+          {
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/input",
+        "namedImports": [
+          {
+            "name": "Input"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/label",
+        "namedImports": [
+          {
+            "name": "Label"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/switch",
+        "namedImports": [
+          {
+            "name": "Switch"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/textarea",
+        "namedImports": [
+          {
+            "name": "Textarea"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "CheckCircle"
+          },
+          {
+            "name": "Bell"
+          },
+          {
+            "name": "Mail"
+          },
+          {
+            "name": "Send"
+          },
+          {
+            "name": "MessageCircle"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/types",
+        "namedImports": [
+          {
+            "name": "NotificationPreference"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "SettingsPage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts",
+    "imports": [
+      {
+        "moduleSpecifier": "zustand",
+        "namedImports": [
+          {
+            "name": "create"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/api",
+        "defaultImport": "api",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/types",
+        "namedImports": [
+          {
+            "name": "User"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "AuthState",
+        "isExported": false
+      }
+    ],
+    "types": [],
+    "variables": [
+      {
+        "name": "useAuthStore",
+        "isExported": true,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/jobStore.ts",
+    "imports": [
+      {
+        "moduleSpecifier": "zustand",
+        "namedImports": [
+          {
+            "name": "create"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/api",
+        "defaultImport": "api",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/types",
+        "namedImports": [
+          {
+            "name": "Job"
+          },
+          {
+            "name": "JobFilters"
+          },
+          {
+            "name": "JobsResponse"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "JobState",
+        "isExported": false
+      }
+    ],
+    "types": [],
+    "variables": [
+      {
+        "name": "defaultFilters",
+        "isExported": false,
+        "type": "JobFilters",
+        "kind": "const"
+      },
+      {
+        "name": "useJobStore",
+        "isExported": true,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/dashboard.ts",
+    "imports": [],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "DashboardStats",
+        "isExported": true
+      },
+      {
+        "name": "TopCompany",
+        "isExported": true
+      },
+      {
+        "name": "TopSkill",
+        "isExported": true
+      },
+      {
+        "name": "NotificationPreference",
+        "isExported": true
+      }
+    ],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts",
+    "imports": [],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "User",
+        "moduleSpecifier": "./user"
+      },
+      {
+        "isDefault": false,
+        "name": "AuthResponse",
+        "moduleSpecifier": "./user"
+      },
+      {
+        "isDefault": false,
+        "name": "LoginCredentials",
+        "moduleSpecifier": "./user"
+      },
+      {
+        "isDefault": false,
+        "name": "RegisterCredentials",
+        "moduleSpecifier": "./user"
+      },
+      {
+        "isDefault": false,
+        "name": "Job",
+        "moduleSpecifier": "./job"
+      },
+      {
+        "isDefault": false,
+        "name": "JobsResponse",
+        "moduleSpecifier": "./job"
+      },
+      {
+        "isDefault": false,
+        "name": "JobFilters",
+        "moduleSpecifier": "./job"
+      },
+      {
+        "isDefault": false,
+        "name": "JobStats",
+        "moduleSpecifier": "./job"
+      },
+      {
+        "isDefault": false,
+        "name": "Recruiter",
+        "moduleSpecifier": "./recruiter"
+      },
+      {
+        "isDefault": false,
+        "name": "RecruitersResponse",
+        "moduleSpecifier": "./recruiter"
+      },
+      {
+        "isDefault": false,
+        "name": "Resume",
+        "moduleSpecifier": "./resume"
+      },
+      {
+        "isDefault": false,
+        "name": "MatchResult",
+        "moduleSpecifier": "./resume"
+      },
+      {
+        "isDefault": false,
+        "name": "ResumeMatchResponse",
+        "moduleSpecifier": "./resume"
+      },
+      {
+        "isDefault": false,
+        "name": "DashboardStats",
+        "moduleSpecifier": "./dashboard"
+      },
+      {
+        "isDefault": false,
+        "name": "TopCompany",
+        "moduleSpecifier": "./dashboard"
+      },
+      {
+        "isDefault": false,
+        "name": "TopSkill",
+        "moduleSpecifier": "./dashboard"
+      },
+      {
+        "isDefault": false,
+        "name": "NotificationPreference",
+        "moduleSpecifier": "./dashboard"
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/job.ts",
+    "imports": [],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "Job",
+        "isExported": true
+      },
+      {
+        "name": "JobsResponse",
+        "isExported": true
+      },
+      {
+        "name": "JobFilters",
+        "isExported": true
+      },
+      {
+        "name": "JobStats",
+        "isExported": true
+      }
+    ],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/recruiter.ts",
+    "imports": [],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "Recruiter",
+        "isExported": true
+      },
+      {
+        "name": "RecruitersResponse",
+        "isExported": true
+      }
+    ],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/resume.ts",
+    "imports": [],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "Resume",
+        "isExported": true
+      },
+      {
+        "name": "MatchResult",
+        "isExported": true
+      },
+      {
+        "name": "ResumeMatchResponse",
+        "isExported": true
+      }
+    ],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/user.ts",
+    "imports": [],
+    "exports": [],
+    "functions": [],
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "User",
+        "isExported": true
+      },
+      {
+        "name": "AuthResponse",
+        "isExported": true
+      },
+      {
+        "name": "LoginCredentials",
+        "isExported": true
+      },
+      {
+        "name": "RegisterCredentials",
+        "isExported": true
+      }
+    ],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/auth/ProtectedRoute.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react-router-dom",
+        "namedImports": [
+          {
+            "name": "Navigate"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/store/authStore",
+        "namedImports": [
+          {
+            "name": "useAuthStore"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "ProtectedRoute",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ children }",
+            "type": "{ children: React.ReactNode }"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Header.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "LogOut"
+          },
+          {
+            "name": "User",
+            "alias": "UserIcon"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/store/authStore",
+        "namedImports": [
+          {
+            "name": "useAuthStore"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/avatar",
+        "namedImports": [
+          {
+            "name": "Avatar"
+          },
+          {
+            "name": "AvatarFallback"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/dropdown-menu",
+        "namedImports": [
+          {
+            "name": "DropdownMenu"
+          },
+          {
+            "name": "DropdownMenuContent"
+          },
+          {
+            "name": "DropdownMenuItem"
+          },
+          {
+            "name": "DropdownMenuTrigger"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "react-router-dom",
+        "namedImports": [
+          {
+            "name": "useNavigate"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "Header",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/MainLayout.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react-router-dom",
+        "namedImports": [
+          {
+            "name": "Outlet"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "./Sidebar",
+        "defaultImport": "Sidebar",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "./Header",
+        "defaultImport": "Header",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useEffect"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/store/authStore",
+        "namedImports": [
+          {
+            "name": "useAuthStore"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "MainLayout",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Sidebar.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react-router-dom",
+        "namedImports": [
+          {
+            "name": "NavLink"
+          },
+          {
+            "name": "useLocation"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "LayoutDashboard"
+          },
+          {
+            "name": "Briefcase"
+          },
+          {
+            "name": "Users"
+          },
+          {
+            "name": "FileText"
+          },
+          {
+            "name": "Settings"
+          },
+          {
+            "name": "ChevronLeft"
+          },
+          {
+            "name": "ChevronRight"
+          },
+          {
+            "name": "Sparkles"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "react",
+        "namedImports": [
+          {
+            "name": "useState"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [],
+    "functions": [
+      {
+        "name": "Sidebar",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      },
+      {
+        "name": "useSidebarWidth",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": [
+      {
+        "name": "navItems",
+        "isExported": false,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/avatar.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@base-ui/react/avatar",
+        "namedImports": [
+          {
+            "name": "Avatar",
+            "alias": "AvatarPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Avatar"
+      },
+      {
+        "isDefault": false,
+        "name": "AvatarImage"
+      },
+      {
+        "isDefault": false,
+        "name": "AvatarFallback"
+      },
+      {
+        "isDefault": false,
+        "name": "AvatarGroup"
+      },
+      {
+        "isDefault": false,
+        "name": "AvatarGroupCount"
+      },
+      {
+        "isDefault": false,
+        "name": "AvatarBadge"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Avatar",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  size = \"default\",\n  ...props\n}",
+            "type": "AvatarPrimitive.Root.Props & {\n  size?: \"default\" | \"sm\" | \"lg\"\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "AvatarImage",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "AvatarPrimitive.Image.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "AvatarFallback",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "AvatarPrimitive.Fallback.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "AvatarBadge",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"span\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "AvatarGroup",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "AvatarGroupCount",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/badge.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@base-ui/react/merge-props",
+        "namedImports": [
+          {
+            "name": "mergeProps"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@base-ui/react/use-render",
+        "namedImports": [
+          {
+            "name": "useRender"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "class-variance-authority",
+        "namedImports": [
+          {
+            "name": "cva"
+          },
+          {
+            "name": "VariantProps"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Badge"
+      },
+      {
+        "isDefault": false,
+        "name": "badgeVariants"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Badge",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  variant = \"default\",\n  render,\n  ...props\n}",
+            "type": "useRender.ComponentProps<\"span\"> & VariantProps<typeof badgeVariants>"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": [
+      {
+        "name": "badgeVariants",
+        "isExported": false,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@base-ui/react/button",
+        "namedImports": [
+          {
+            "name": "Button",
+            "alias": "ButtonPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "class-variance-authority",
+        "namedImports": [
+          {
+            "name": "cva"
+          },
+          {
+            "name": "VariantProps"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Button"
+      },
+      {
+        "isDefault": false,
+        "name": "buttonVariants"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Button",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  variant = \"default\",\n  size = \"default\",\n  ...props\n}",
+            "type": "ButtonPrimitive.Props & VariantProps<typeof buttonVariants>"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": [
+      {
+        "name": "buttonVariants",
+        "isExported": false,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/card.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Card"
+      },
+      {
+        "isDefault": false,
+        "name": "CardHeader"
+      },
+      {
+        "isDefault": false,
+        "name": "CardFooter"
+      },
+      {
+        "isDefault": false,
+        "name": "CardTitle"
+      },
+      {
+        "isDefault": false,
+        "name": "CardAction"
+      },
+      {
+        "isDefault": false,
+        "name": "CardDescription"
+      },
+      {
+        "isDefault": false,
+        "name": "CardContent"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Card",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  size = \"default\",\n  ...props\n}",
+            "type": "React.ComponentProps<\"div\"> & { size?: \"default\" | \"sm\" }"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "CardHeader",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "CardTitle",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "CardDescription",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "CardAction",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "CardContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "CardFooter",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dialog.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@base-ui/react/dialog",
+        "namedImports": [
+          {
+            "name": "Dialog",
+            "alias": "DialogPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/button",
+        "namedImports": [
+          {
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "XIcon"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Dialog"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogClose"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogContent"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogDescription"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogFooter"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogHeader"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogOverlay"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogPortal"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogTitle"
+      },
+      {
+        "isDefault": false,
+        "name": "DialogTrigger"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Dialog",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "DialogPrimitive.Root.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogTrigger",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "DialogPrimitive.Trigger.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogPortal",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "DialogPrimitive.Portal.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogClose",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "DialogPrimitive.Close.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogOverlay",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "DialogPrimitive.Backdrop.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  children,\n  showCloseButton = true,\n  ...props\n}",
+            "type": "DialogPrimitive.Popup.Props & {\n  showCloseButton?: boolean\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogHeader",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogFooter",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  showCloseButton = false,\n  children,\n  ...props\n}",
+            "type": "React.ComponentProps<\"div\"> & {\n  showCloseButton?: boolean\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogTitle",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "DialogPrimitive.Title.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DialogDescription",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "DialogPrimitive.Description.Props"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dropdown-menu.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@base-ui/react/menu",
+        "namedImports": [
+          {
+            "name": "Menu",
+            "alias": "MenuPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "ChevronRightIcon"
+          },
+          {
+            "name": "CheckIcon"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "DropdownMenu"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuPortal"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuTrigger"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuContent"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuGroup"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuLabel"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuItem"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuCheckboxItem"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuRadioGroup"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuRadioItem"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuSeparator"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuShortcut"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuSub"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuSubTrigger"
+      },
+      {
+        "isDefault": false,
+        "name": "DropdownMenuSubContent"
+      }
+    ],
+    "functions": [
+      {
+        "name": "DropdownMenu",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "MenuPrimitive.Root.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuPortal",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "MenuPrimitive.Portal.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuTrigger",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "MenuPrimitive.Trigger.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  align = \"start\",\n  alignOffset = 0,\n  side = \"bottom\",\n  sideOffset = 4,\n  className,\n  ...props\n}",
+            "type": "MenuPrimitive.Popup.Props &\n  Pick<\n    MenuPrimitive.Positioner.Props,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuGroup",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "MenuPrimitive.Group.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuLabel",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  inset,\n  ...props\n}",
+            "type": "MenuPrimitive.GroupLabel.Props & {\n  inset?: boolean\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuItem",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  inset,\n  variant = \"default\",\n  ...props\n}",
+            "type": "MenuPrimitive.Item.Props & {\n  inset?: boolean\n  variant?: \"default\" | \"destructive\"\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuSub",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "MenuPrimitive.SubmenuRoot.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuSubTrigger",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  inset,\n  children,\n  ...props\n}",
+            "type": "MenuPrimitive.SubmenuTrigger.Props & {\n  inset?: boolean\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuSubContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  align = \"start\",\n  alignOffset = -3,\n  side = \"right\",\n  sideOffset = 0,\n  className,\n  ...props\n}",
+            "type": "React.ComponentProps<typeof DropdownMenuContent>"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuCheckboxItem",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  children,\n  checked,\n  inset,\n  ...props\n}",
+            "type": "MenuPrimitive.CheckboxItem.Props & {\n  inset?: boolean\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuRadioGroup",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "MenuPrimitive.RadioGroup.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuRadioItem",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  children,\n  inset,\n  ...props\n}",
+            "type": "MenuPrimitive.RadioItem.Props & {\n  inset?: boolean\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuSeparator",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "MenuPrimitive.Separator.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "DropdownMenuShortcut",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "React.ComponentProps<\"span\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@base-ui/react/input",
+        "namedImports": [
+          {
+            "name": "Input",
+            "alias": "InputPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Input"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Input",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, type, ...props }",
+            "type": "React.ComponentProps<\"input\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Label"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Label",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"label\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/progress.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@base-ui/react/progress",
+        "namedImports": [
+          {
+            "name": "Progress",
+            "alias": "ProgressPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Progress"
+      },
+      {
+        "isDefault": false,
+        "name": "ProgressTrack"
+      },
+      {
+        "isDefault": false,
+        "name": "ProgressIndicator"
+      },
+      {
+        "isDefault": false,
+        "name": "ProgressLabel"
+      },
+      {
+        "isDefault": false,
+        "name": "ProgressValue"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Progress",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  children,\n  value,\n  ...props\n}",
+            "type": "ProgressPrimitive.Root.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "ProgressTrack",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "ProgressPrimitive.Track.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "ProgressIndicator",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "ProgressPrimitive.Indicator.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "ProgressLabel",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "ProgressPrimitive.Label.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "ProgressValue",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "ProgressPrimitive.Value.Props"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/select.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@base-ui/react/select",
+        "namedImports": [
+          {
+            "name": "Select",
+            "alias": "SelectPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "ChevronDownIcon"
+          },
+          {
+            "name": "CheckIcon"
+          },
+          {
+            "name": "ChevronUpIcon"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Select"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectContent"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectGroup"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectItem"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectLabel"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectScrollDownButton"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectScrollUpButton"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectSeparator"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectTrigger"
+      },
+      {
+        "isDefault": false,
+        "name": "SelectValue"
+      }
+    ],
+    "functions": [
+      {
+        "name": "SelectGroup",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "SelectPrimitive.Group.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectValue",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "SelectPrimitive.Value.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectTrigger",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  size = \"default\",\n  children,\n  ...props\n}",
+            "type": "SelectPrimitive.Trigger.Props & {\n  size?: \"sm\" | \"default\"\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  children,\n  side = \"bottom\",\n  sideOffset = 4,\n  align = \"center\",\n  alignOffset = 0,\n  alignItemWithTrigger = true,\n  ...props\n}",
+            "type": "SelectPrimitive.Popup.Props &\n  Pick<\n    SelectPrimitive.Positioner.Props,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\" | \"alignItemWithTrigger\"\n  >"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectLabel",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "SelectPrimitive.GroupLabel.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectItem",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  children,\n  ...props\n}",
+            "type": "SelectPrimitive.Item.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectSeparator",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "SelectPrimitive.Separator.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectScrollUpButton",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "React.ComponentProps<typeof SelectPrimitive.ScrollUpArrow>"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SelectScrollDownButton",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "React.ComponentProps<typeof SelectPrimitive.ScrollDownArrow>"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": [
+      {
+        "name": "Select",
+        "isExported": false,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/separator.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@base-ui/react/separator",
+        "namedImports": [
+          {
+            "name": "Separator",
+            "alias": "SeparatorPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Separator"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Separator",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  orientation = \"horizontal\",\n  ...props\n}",
+            "type": "SeparatorPrimitive.Props"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/sheet.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@base-ui/react/dialog",
+        "namedImports": [
+          {
+            "name": "Dialog",
+            "alias": "SheetPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/components/ui/button",
+        "namedImports": [
+          {
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "lucide-react",
+        "namedImports": [
+          {
+            "name": "XIcon"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Sheet"
+      },
+      {
+        "isDefault": false,
+        "name": "SheetTrigger"
+      },
+      {
+        "isDefault": false,
+        "name": "SheetClose"
+      },
+      {
+        "isDefault": false,
+        "name": "SheetContent"
+      },
+      {
+        "isDefault": false,
+        "name": "SheetHeader"
+      },
+      {
+        "isDefault": false,
+        "name": "SheetFooter"
+      },
+      {
+        "isDefault": false,
+        "name": "SheetTitle"
+      },
+      {
+        "isDefault": false,
+        "name": "SheetDescription"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Sheet",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "SheetPrimitive.Root.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetTrigger",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "SheetPrimitive.Trigger.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetClose",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "SheetPrimitive.Close.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetPortal",
+        "isAsync": false,
+        "isExported": false,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "SheetPrimitive.Portal.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetOverlay",
+        "isAsync": false,
+        "isExported": false,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "SheetPrimitive.Backdrop.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  children,\n  side = \"right\",\n  showCloseButton = true,\n  ...props\n}",
+            "type": "SheetPrimitive.Popup.Props & {\n  side?: \"top\" | \"right\" | \"bottom\" | \"left\"\n  showCloseButton?: boolean\n}"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetHeader",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetFooter",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetTitle",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "SheetPrimitive.Title.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "SheetDescription",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "SheetPrimitive.Description.Props"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/skeleton.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Skeleton"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Skeleton",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"div\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/switch.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@base-ui/react/switch",
+        "namedImports": [
+          {
+            "name": "Switch",
+            "alias": "SwitchPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Switch"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Switch",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  size = \"default\",\n  ...props\n}",
+            "type": "SwitchPrimitive.Root.Props & {\n  size?: \"sm\" | \"default\"\n}"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/table.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Table"
+      },
+      {
+        "isDefault": false,
+        "name": "TableHeader"
+      },
+      {
+        "isDefault": false,
+        "name": "TableBody"
+      },
+      {
+        "isDefault": false,
+        "name": "TableFooter"
+      },
+      {
+        "isDefault": false,
+        "name": "TableHead"
+      },
+      {
+        "isDefault": false,
+        "name": "TableRow"
+      },
+      {
+        "isDefault": false,
+        "name": "TableCell"
+      },
+      {
+        "isDefault": false,
+        "name": "TableCaption"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Table",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"table\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TableHeader",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"thead\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TableBody",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"tbody\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TableFooter",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"tfoot\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TableRow",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"tr\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TableHead",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"th\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TableCell",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"td\">"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TableCaption",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  ...props\n}",
+            "type": "React.ComponentProps<\"caption\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tabs.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@base-ui/react/tabs",
+        "namedImports": [
+          {
+            "name": "Tabs",
+            "alias": "TabsPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "class-variance-authority",
+        "namedImports": [
+          {
+            "name": "cva"
+          },
+          {
+            "name": "VariantProps"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Tabs"
+      },
+      {
+        "isDefault": false,
+        "name": "TabsList"
+      },
+      {
+        "isDefault": false,
+        "name": "TabsTrigger"
+      },
+      {
+        "isDefault": false,
+        "name": "TabsContent"
+      },
+      {
+        "isDefault": false,
+        "name": "tabsListVariants"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Tabs",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  orientation = \"horizontal\",\n  ...props\n}",
+            "type": "TabsPrimitive.Root.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TabsList",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  variant = \"default\",\n  ...props\n}",
+            "type": "TabsPrimitive.List.Props & VariantProps<typeof tabsListVariants>"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TabsTrigger",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "TabsPrimitive.Tab.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TabsContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "TabsPrimitive.Panel.Props"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": [
+      {
+        "name": "tabsListVariants",
+        "isExported": false,
+        "type": "any",
+        "kind": "const"
+      }
+    ]
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/textarea.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "react",
+        "namespaceImport": "React",
+        "namedImports": []
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Textarea"
+      }
+    ],
+    "functions": [
+      {
+        "name": "Textarea",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ className, ...props }",
+            "type": "React.ComponentProps<\"textarea\">"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  },
+  {
+    "filePath": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tooltip.tsx",
+    "imports": [
+      {
+        "moduleSpecifier": "@base-ui/react/tooltip",
+        "namedImports": [
+          {
+            "name": "Tooltip",
+            "alias": "TooltipPrimitive"
+          }
+        ]
+      },
+      {
+        "moduleSpecifier": "@/lib/utils",
+        "namedImports": [
+          {
+            "name": "cn"
+          }
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "isDefault": false,
+        "name": "Tooltip"
+      },
+      {
+        "isDefault": false,
+        "name": "TooltipTrigger"
+      },
+      {
+        "isDefault": false,
+        "name": "TooltipContent"
+      },
+      {
+        "isDefault": false,
+        "name": "TooltipProvider"
+      }
+    ],
+    "functions": [
+      {
+        "name": "TooltipProvider",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  delay = 0,\n  ...props\n}",
+            "type": "TooltipPrimitive.Provider.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "Tooltip",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "TooltipPrimitive.Root.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TooltipTrigger",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{ ...props }",
+            "type": "TooltipPrimitive.Trigger.Props"
+          }
+        ],
+        "returnType": "any"
+      },
+      {
+        "name": "TooltipContent",
+        "isAsync": false,
+        "isExported": true,
+        "parameters": [
+          {
+            "name": "{\n  className,\n  side = \"top\",\n  sideOffset = 4,\n  align = \"center\",\n  alignOffset = 0,\n  children,\n  ...props\n}",
+            "type": "TooltipPrimitive.Popup.Props &\n  Pick<\n    TooltipPrimitive.Positioner.Props,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >"
+          }
+        ],
+        "returnType": "any"
+      }
+    ],
+    "classes": [],
+    "interfaces": [],
+    "types": [],
+    "variables": []
+  }
+]

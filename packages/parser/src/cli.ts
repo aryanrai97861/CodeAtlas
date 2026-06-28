@@ -22,12 +22,27 @@ async function main() {
       console.error('Scan failed:', error);
       process.exit(1);
     }
+  } else if (command === 'parse') {
+    console.log(`Parsing repository at ${targetDir}...`);
+    const { ASTParser } = await import('./ast/parser.js');
+    const parser = new ASTParser(targetDir);
+    
+    try {
+      const parsedFiles = parser.parse();
+      const outputPath = path.join(process.cwd(), 'analysis.json');
+      fs.writeFileSync(outputPath, JSON.stringify(parsedFiles, null, 2));
+      console.log(`Parse complete. AST Data written to ${outputPath}`);
+    } catch (error) {
+      console.error('Parse failed:', error);
+      process.exit(1);
+    }
   } else {
     console.log(`
 Usage: code-atlas <command> [path]
 
 Commands:
   scan [path]    Scan repository and generate repository.json
+  parse [path]   Parse repository and generate analysis.json
     `);
   }
 }
