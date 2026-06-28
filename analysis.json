@@ -163,7 +163,23 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "Route",
+          "LoginPage",
+          "RegisterPage",
+          "MainLayout",
+          "DashboardPage",
+          "JobsPage",
+          "RecruitersPage",
+          "ResumePage",
+          "SettingsPage",
+          "Navigate",
+          "BrowserRouter",
+          "Routes",
+          "ProtectedRoute"
+        ]
       }
     ],
     "classes": [],
@@ -270,7 +286,12 @@
             "type": "ClassValue[]"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "twMerge",
+          "clsx"
+        ],
+        "jsxElements": []
       }
     ],
     "classes": [],
@@ -367,14 +388,48 @@
             "type": "{\n  icon: React.ElementType;\n  label: string;\n  value: number | string;\n  gradient: string;\n  delay: number;\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "Icon",
+          "div",
+          "p"
+        ]
       },
       {
         "name": "DashboardPage",
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useState",
+          "useEffect",
+          "Promise.all",
+          "api.get",
+          "setStats",
+          "setTopCompanies",
+          "setTopSkills",
+          "console.error",
+          "setLoading",
+          "fetchData",
+          "[1, 2, 3, 4].map",
+          "topCompanies.slice",
+          "topSkills.slice"
+        ],
+        "jsxElements": [
+          "div",
+          "StatCard",
+          "CartesianGrid",
+          "XAxis",
+          "YAxis",
+          "Tooltip",
+          "Bar",
+          "h3",
+          "ResponsiveContainer",
+          "BarChart",
+          "p"
+        ]
       }
     ],
     "classes": [],
@@ -539,21 +594,89 @@
             "type": "{ job: Job }"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "(job.salary_min / 1000).toFixed",
+          "(job.salary_max / 1000).toFixed",
+          "format",
+          "(job.skills || []).slice(0, 5).map",
+          "(job.skills || []).slice"
+        ],
+        "jsxElements": [
+          "MapPin",
+          "IndianRupee",
+          "Calendar",
+          "ExternalLink",
+          "div",
+          "h3",
+          "p",
+          "Badge",
+          "span",
+          "a"
+        ]
       },
       {
         "name": "FilterPanel",
         "isAsync": false,
         "isExported": false,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useJobStore",
+          "setFilters",
+          "fetchJobs"
+        ],
+        "jsxElements": [
+          "Filter",
+          "Input",
+          "SelectValue",
+          "Switch",
+          "div",
+          "h3",
+          "Label",
+          "Select",
+          "SelectTrigger",
+          "SelectContent",
+          "SelectItem",
+          "Button"
+        ]
       },
       {
         "name": "JobsPage",
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useJobStore",
+          "useState",
+          "useEffect",
+          "fetchJobs",
+          "setFilters",
+          "setSearchInput",
+          "handleSearch",
+          "[1, 2, 3, 4, 5, 6].map",
+          "jobs.map",
+          "Array.from",
+          "Math.min"
+        ],
+        "jsxElements": [
+          "FilterPanel",
+          "Search",
+          "Input",
+          "Button",
+          "Filter",
+          "Briefcase",
+          "div",
+          "JobCard",
+          "ChevronLeft",
+          "ChevronRight",
+          "Sheet",
+          "SheetTrigger",
+          "SheetContent",
+          "p",
+          "span"
+        ]
       }
     ],
     "classes": [],
@@ -640,7 +763,32 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useState",
+          "useAuthStore",
+          "useNavigate",
+          "e.preventDefault",
+          "setError",
+          "login",
+          "navigate",
+          "setEmail",
+          "setPassword"
+        ],
+        "jsxElements": [
+          "div",
+          "Sparkles",
+          "AlertCircle",
+          "Mail",
+          "Input",
+          "Lock",
+          "h1",
+          "p",
+          "form",
+          "Label",
+          "Button",
+          "Link"
+        ]
       }
     ],
     "classes": [],
@@ -742,7 +890,40 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useState",
+          "setLoading",
+          "api.get",
+          "setRecruiters",
+          "setTotal",
+          "useEffect",
+          "fetchRecruiters",
+          "setSearch",
+          "[1, 2, 3, 4, 5].map",
+          "recruiters.map",
+          "getConfidenceBadge"
+        ],
+        "jsxElements": [
+          "Search",
+          "Input",
+          "div",
+          "Building2",
+          "Mail",
+          "ExternalLink",
+          "Users",
+          "Badge",
+          "h1",
+          "p",
+          "Table",
+          "TableHeader",
+          "TableRow",
+          "TableHead",
+          "TableBody",
+          "TableCell",
+          "a",
+          "span"
+        ]
       }
     ],
     "classes": [],
@@ -832,7 +1013,34 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useState",
+          "useAuthStore",
+          "useNavigate",
+          "e.preventDefault",
+          "setError",
+          "register",
+          "navigate",
+          "setFullName",
+          "setEmail",
+          "setPassword"
+        ],
+        "jsxElements": [
+          "div",
+          "Sparkles",
+          "AlertCircle",
+          "User",
+          "Input",
+          "Mail",
+          "Lock",
+          "h1",
+          "p",
+          "form",
+          "Label",
+          "Button",
+          "Link"
+        ]
       }
     ],
     "classes": [],
@@ -936,7 +1144,47 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useState",
+          "useCallback",
+          "setUploading",
+          "setError",
+          "setUploadProgress",
+          "formData.append",
+          "api.post",
+          "Math.round",
+          "setResume",
+          "setMatchLoading",
+          "api.get",
+          "setMatches",
+          "useDropzone",
+          "getRootProps",
+          "getInputProps",
+          "resume.extracted_skills.map",
+          "[1, 2, 3].map",
+          "matches.map",
+          "match.strengths.map",
+          "match.missing_skills.map"
+        ],
+        "jsxElements": [
+          "input",
+          "Upload",
+          "Progress",
+          "AlertCircle",
+          "CheckCircle",
+          "Sparkles",
+          "div",
+          "Target",
+          "TrendingUp",
+          "h1",
+          "p",
+          "h3",
+          "h4",
+          "Badge",
+          "h2",
+          "span"
+        ]
       }
     ],
     "classes": [],
@@ -1039,7 +1287,43 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useState",
+          "useEffect",
+          "api.get",
+          "setPrefs",
+          "setKeywordsInput",
+          "(data.keywords || []).join",
+          "load",
+          "setSaving",
+          "setSaved",
+          "keywordsInput\n        .split(\",\")\n        .map((k) => k.trim())\n        .filter",
+          "keywordsInput\n        .split(\",\")\n        .map",
+          "keywordsInput\n        .split",
+          "k.trim",
+          "api.put",
+          "setTimeout",
+          "parseInt"
+        ],
+        "jsxElements": [
+          "Bell",
+          "Mail",
+          "Switch",
+          "Input",
+          "Send",
+          "MessageCircle",
+          "Textarea",
+          "input",
+          "CheckCircle",
+          "div",
+          "h1",
+          "p",
+          "h3",
+          "Label",
+          "Button",
+          "span"
+        ]
       }
     ],
     "classes": [],
@@ -1398,7 +1682,13 @@
             "type": "{ children: React.ReactNode }"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useAuthStore"
+        ],
+        "jsxElements": [
+          "Navigate"
+        ]
       }
     ],
     "classes": [],
@@ -1473,7 +1763,35 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useAuthStore",
+          "useNavigate",
+          "logout",
+          "navigate",
+          "user.full_name\n        .split(\" \")\n        .map((n) => n[0])\n        .join(\"\")\n        .toUpperCase()\n        .slice",
+          "user.full_name\n        .split(\" \")\n        .map((n) => n[0])\n        .join(\"\")\n        .toUpperCase",
+          "user.full_name\n        .split(\" \")\n        .map((n) => n[0])\n        .join",
+          "user.full_name\n        .split(\" \")\n        .map",
+          "user.full_name\n        .split",
+          "user.full_name.split"
+        ],
+        "jsxElements": [
+          "button",
+          "UserIcon",
+          "LogOut",
+          "header",
+          "div",
+          "h2",
+          "p",
+          "DropdownMenu",
+          "DropdownMenuTrigger",
+          "Avatar",
+          "AvatarFallback",
+          "span",
+          "DropdownMenuContent",
+          "DropdownMenuItem"
+        ]
       }
     ],
     "classes": [],
@@ -1526,7 +1844,19 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useAuthStore",
+          "useEffect",
+          "fetchUser"
+        ],
+        "jsxElements": [
+          "Sidebar",
+          "Header",
+          "Outlet",
+          "div",
+          "main"
+        ]
       }
     ],
     "classes": [],
@@ -1601,14 +1931,36 @@
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useState",
+          "useLocation",
+          "cn",
+          "navItems.map",
+          "location.pathname.startsWith",
+          "setCollapsed"
+        ],
+        "jsxElements": [
+          "Sparkles",
+          "item.icon",
+          "div",
+          "ChevronRight",
+          "ChevronLeft",
+          "aside",
+          "span",
+          "nav",
+          "NavLink",
+          "button"
+        ]
       },
       {
         "name": "useSidebarWidth",
         "isAsync": false,
         "isExported": true,
         "parameters": [],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": []
       }
     ],
     "classes": [],
@@ -1686,7 +2038,13 @@
             "type": "AvatarPrimitive.Root.Props & {\n  size?: \"default\" | \"sm\" | \"lg\"\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "AvatarPrimitive.Root"
+        ]
       },
       {
         "name": "AvatarImage",
@@ -1698,7 +2056,13 @@
             "type": "AvatarPrimitive.Image.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "AvatarPrimitive.Image"
+        ]
       },
       {
         "name": "AvatarFallback",
@@ -1710,7 +2074,13 @@
             "type": "AvatarPrimitive.Fallback.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "AvatarPrimitive.Fallback"
+        ]
       },
       {
         "name": "AvatarBadge",
@@ -1722,7 +2092,13 @@
             "type": "React.ComponentProps<\"span\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "span"
+        ]
       },
       {
         "name": "AvatarGroup",
@@ -1734,7 +2110,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "AvatarGroupCount",
@@ -1746,7 +2128,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       }
     ],
     "classes": [],
@@ -1814,7 +2202,14 @@
             "type": "useRender.ComponentProps<\"span\"> & VariantProps<typeof badgeVariants>"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "useRender",
+          "mergeProps",
+          "cn",
+          "badgeVariants"
+        ],
+        "jsxElements": []
       }
     ],
     "classes": [],
@@ -1882,7 +2277,14 @@
             "type": "ButtonPrimitive.Props & VariantProps<typeof buttonVariants>"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn",
+          "buttonVariants"
+        ],
+        "jsxElements": [
+          "ButtonPrimitive"
+        ]
       }
     ],
     "classes": [],
@@ -1955,7 +2357,13 @@
             "type": "React.ComponentProps<\"div\"> & { size?: \"default\" | \"sm\" }"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "CardHeader",
@@ -1967,7 +2375,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "CardTitle",
@@ -1979,7 +2393,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "CardDescription",
@@ -1991,7 +2411,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "CardAction",
@@ -2003,7 +2429,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "CardContent",
@@ -2015,7 +2447,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "CardFooter",
@@ -2027,7 +2465,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       }
     ],
     "classes": [],
@@ -2130,7 +2574,11 @@
             "type": "DialogPrimitive.Root.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "DialogPrimitive.Root"
+        ]
       },
       {
         "name": "DialogTrigger",
@@ -2142,7 +2590,11 @@
             "type": "DialogPrimitive.Trigger.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "DialogPrimitive.Trigger"
+        ]
       },
       {
         "name": "DialogPortal",
@@ -2154,7 +2606,11 @@
             "type": "DialogPrimitive.Portal.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "DialogPrimitive.Portal"
+        ]
       },
       {
         "name": "DialogClose",
@@ -2166,7 +2622,11 @@
             "type": "DialogPrimitive.Close.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "DialogPrimitive.Close"
+        ]
       },
       {
         "name": "DialogOverlay",
@@ -2178,7 +2638,13 @@
             "type": "DialogPrimitive.Backdrop.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "DialogPrimitive.Backdrop"
+        ]
       },
       {
         "name": "DialogContent",
@@ -2190,7 +2656,19 @@
             "type": "DialogPrimitive.Popup.Props & {\n  showCloseButton?: boolean\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "DialogOverlay",
+          "Button",
+          "XIcon",
+          "DialogPortal",
+          "DialogPrimitive.Popup",
+          "DialogPrimitive.Close",
+          "span"
+        ]
       },
       {
         "name": "DialogHeader",
@@ -2202,7 +2680,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "DialogFooter",
@@ -2214,7 +2698,15 @@
             "type": "React.ComponentProps<\"div\"> & {\n  showCloseButton?: boolean\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "Button",
+          "div",
+          "DialogPrimitive.Close"
+        ]
       },
       {
         "name": "DialogTitle",
@@ -2226,7 +2718,13 @@
             "type": "DialogPrimitive.Title.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "DialogPrimitive.Title"
+        ]
       },
       {
         "name": "DialogDescription",
@@ -2238,7 +2736,13 @@
             "type": "DialogPrimitive.Description.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "DialogPrimitive.Description"
+        ]
       }
     ],
     "classes": [],
@@ -2356,7 +2860,11 @@
             "type": "MenuPrimitive.Root.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "MenuPrimitive.Root"
+        ]
       },
       {
         "name": "DropdownMenuPortal",
@@ -2368,7 +2876,11 @@
             "type": "MenuPrimitive.Portal.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "MenuPrimitive.Portal"
+        ]
       },
       {
         "name": "DropdownMenuTrigger",
@@ -2380,7 +2892,11 @@
             "type": "MenuPrimitive.Trigger.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "MenuPrimitive.Trigger"
+        ]
       },
       {
         "name": "DropdownMenuContent",
@@ -2392,7 +2908,15 @@
             "type": "MenuPrimitive.Popup.Props &\n  Pick<\n    MenuPrimitive.Positioner.Props,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "MenuPrimitive.Popup",
+          "MenuPrimitive.Portal",
+          "MenuPrimitive.Positioner"
+        ]
       },
       {
         "name": "DropdownMenuGroup",
@@ -2404,7 +2928,11 @@
             "type": "MenuPrimitive.Group.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "MenuPrimitive.Group"
+        ]
       },
       {
         "name": "DropdownMenuLabel",
@@ -2416,7 +2944,13 @@
             "type": "MenuPrimitive.GroupLabel.Props & {\n  inset?: boolean\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "MenuPrimitive.GroupLabel"
+        ]
       },
       {
         "name": "DropdownMenuItem",
@@ -2428,7 +2962,13 @@
             "type": "MenuPrimitive.Item.Props & {\n  inset?: boolean\n  variant?: \"default\" | \"destructive\"\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "MenuPrimitive.Item"
+        ]
       },
       {
         "name": "DropdownMenuSub",
@@ -2440,7 +2980,11 @@
             "type": "MenuPrimitive.SubmenuRoot.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "MenuPrimitive.SubmenuRoot"
+        ]
       },
       {
         "name": "DropdownMenuSubTrigger",
@@ -2452,7 +2996,14 @@
             "type": "MenuPrimitive.SubmenuTrigger.Props & {\n  inset?: boolean\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ChevronRightIcon",
+          "MenuPrimitive.SubmenuTrigger"
+        ]
       },
       {
         "name": "DropdownMenuSubContent",
@@ -2464,7 +3015,13 @@
             "type": "React.ComponentProps<typeof DropdownMenuContent>"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "DropdownMenuContent"
+        ]
       },
       {
         "name": "DropdownMenuCheckboxItem",
@@ -2476,7 +3033,16 @@
             "type": "MenuPrimitive.CheckboxItem.Props & {\n  inset?: boolean\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "CheckIcon",
+          "MenuPrimitive.CheckboxItem",
+          "span",
+          "MenuPrimitive.CheckboxItemIndicator"
+        ]
       },
       {
         "name": "DropdownMenuRadioGroup",
@@ -2488,7 +3054,11 @@
             "type": "MenuPrimitive.RadioGroup.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "MenuPrimitive.RadioGroup"
+        ]
       },
       {
         "name": "DropdownMenuRadioItem",
@@ -2500,7 +3070,16 @@
             "type": "MenuPrimitive.RadioItem.Props & {\n  inset?: boolean\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "CheckIcon",
+          "MenuPrimitive.RadioItem",
+          "span",
+          "MenuPrimitive.RadioItemIndicator"
+        ]
       },
       {
         "name": "DropdownMenuSeparator",
@@ -2512,7 +3091,13 @@
             "type": "MenuPrimitive.Separator.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "MenuPrimitive.Separator"
+        ]
       },
       {
         "name": "DropdownMenuShortcut",
@@ -2524,7 +3109,13 @@
             "type": "React.ComponentProps<\"span\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "span"
+        ]
       }
     ],
     "classes": [],
@@ -2575,7 +3166,13 @@
             "type": "React.ComponentProps<\"input\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "InputPrimitive"
+        ]
       }
     ],
     "classes": [],
@@ -2617,7 +3214,13 @@
             "type": "React.ComponentProps<\"label\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "label"
+        ]
       }
     ],
     "classes": [],
@@ -2679,7 +3282,15 @@
             "type": "ProgressPrimitive.Root.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ProgressIndicator",
+          "ProgressPrimitive.Root",
+          "ProgressTrack"
+        ]
       },
       {
         "name": "ProgressTrack",
@@ -2691,7 +3302,13 @@
             "type": "ProgressPrimitive.Track.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ProgressPrimitive.Track"
+        ]
       },
       {
         "name": "ProgressIndicator",
@@ -2703,7 +3320,13 @@
             "type": "ProgressPrimitive.Indicator.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ProgressPrimitive.Indicator"
+        ]
       },
       {
         "name": "ProgressLabel",
@@ -2715,7 +3338,13 @@
             "type": "ProgressPrimitive.Label.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ProgressPrimitive.Label"
+        ]
       },
       {
         "name": "ProgressValue",
@@ -2727,7 +3356,13 @@
             "type": "ProgressPrimitive.Value.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ProgressPrimitive.Value"
+        ]
       }
     ],
     "classes": [],
@@ -2828,7 +3463,13 @@
             "type": "SelectPrimitive.Group.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SelectPrimitive.Group"
+        ]
       },
       {
         "name": "SelectValue",
@@ -2840,7 +3481,13 @@
             "type": "SelectPrimitive.Value.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SelectPrimitive.Value"
+        ]
       },
       {
         "name": "SelectTrigger",
@@ -2852,7 +3499,15 @@
             "type": "SelectPrimitive.Trigger.Props & {\n  size?: \"sm\" | \"default\"\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SelectPrimitive.Icon",
+          "ChevronDownIcon",
+          "SelectPrimitive.Trigger"
+        ]
       },
       {
         "name": "SelectContent",
@@ -2864,7 +3519,18 @@
             "type": "SelectPrimitive.Popup.Props &\n  Pick<\n    SelectPrimitive.Positioner.Props,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\" | \"alignItemWithTrigger\"\n  >"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SelectScrollUpButton",
+          "SelectScrollDownButton",
+          "SelectPrimitive.Portal",
+          "SelectPrimitive.Positioner",
+          "SelectPrimitive.Popup",
+          "SelectPrimitive.List"
+        ]
       },
       {
         "name": "SelectLabel",
@@ -2876,7 +3542,13 @@
             "type": "SelectPrimitive.GroupLabel.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SelectPrimitive.GroupLabel"
+        ]
       },
       {
         "name": "SelectItem",
@@ -2888,7 +3560,17 @@
             "type": "SelectPrimitive.Item.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "span",
+          "CheckIcon",
+          "SelectPrimitive.Item",
+          "SelectPrimitive.ItemText",
+          "SelectPrimitive.ItemIndicator"
+        ]
       },
       {
         "name": "SelectSeparator",
@@ -2900,7 +3582,13 @@
             "type": "SelectPrimitive.Separator.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SelectPrimitive.Separator"
+        ]
       },
       {
         "name": "SelectScrollUpButton",
@@ -2912,7 +3600,14 @@
             "type": "React.ComponentProps<typeof SelectPrimitive.ScrollUpArrow>"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ChevronUpIcon",
+          "SelectPrimitive.ScrollUpArrow"
+        ]
       },
       {
         "name": "SelectScrollDownButton",
@@ -2924,7 +3619,14 @@
             "type": "React.ComponentProps<typeof SelectPrimitive.ScrollDownArrow>"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "ChevronDownIcon",
+          "SelectPrimitive.ScrollDownArrow"
+        ]
       }
     ],
     "classes": [],
@@ -2977,7 +3679,13 @@
             "type": "SeparatorPrimitive.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SeparatorPrimitive"
+        ]
       }
     ],
     "classes": [],
@@ -3072,7 +3780,11 @@
             "type": "SheetPrimitive.Root.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "SheetPrimitive.Root"
+        ]
       },
       {
         "name": "SheetTrigger",
@@ -3084,7 +3796,11 @@
             "type": "SheetPrimitive.Trigger.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "SheetPrimitive.Trigger"
+        ]
       },
       {
         "name": "SheetClose",
@@ -3096,7 +3812,11 @@
             "type": "SheetPrimitive.Close.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "SheetPrimitive.Close"
+        ]
       },
       {
         "name": "SheetPortal",
@@ -3108,7 +3828,11 @@
             "type": "SheetPrimitive.Portal.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "SheetPrimitive.Portal"
+        ]
       },
       {
         "name": "SheetOverlay",
@@ -3120,7 +3844,13 @@
             "type": "SheetPrimitive.Backdrop.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SheetPrimitive.Backdrop"
+        ]
       },
       {
         "name": "SheetContent",
@@ -3132,7 +3862,19 @@
             "type": "SheetPrimitive.Popup.Props & {\n  side?: \"top\" | \"right\" | \"bottom\" | \"left\"\n  showCloseButton?: boolean\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SheetOverlay",
+          "Button",
+          "XIcon",
+          "SheetPortal",
+          "SheetPrimitive.Popup",
+          "SheetPrimitive.Close",
+          "span"
+        ]
       },
       {
         "name": "SheetHeader",
@@ -3144,7 +3886,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "SheetFooter",
@@ -3156,7 +3904,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       },
       {
         "name": "SheetTitle",
@@ -3168,7 +3922,13 @@
             "type": "SheetPrimitive.Title.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SheetPrimitive.Title"
+        ]
       },
       {
         "name": "SheetDescription",
@@ -3180,7 +3940,13 @@
             "type": "SheetPrimitive.Description.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SheetPrimitive.Description"
+        ]
       }
     ],
     "classes": [],
@@ -3217,7 +3983,13 @@
             "type": "React.ComponentProps<\"div\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "div"
+        ]
       }
     ],
     "classes": [],
@@ -3263,7 +4035,14 @@
             "type": "SwitchPrimitive.Root.Props & {\n  size?: \"sm\" | \"default\"\n}"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "SwitchPrimitive.Thumb",
+          "SwitchPrimitive.Root"
+        ]
       }
     ],
     "classes": [],
@@ -3333,7 +4112,14 @@
             "type": "React.ComponentProps<\"table\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "table",
+          "div"
+        ]
       },
       {
         "name": "TableHeader",
@@ -3345,7 +4131,13 @@
             "type": "React.ComponentProps<\"thead\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "thead"
+        ]
       },
       {
         "name": "TableBody",
@@ -3357,7 +4149,13 @@
             "type": "React.ComponentProps<\"tbody\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "tbody"
+        ]
       },
       {
         "name": "TableFooter",
@@ -3369,7 +4167,13 @@
             "type": "React.ComponentProps<\"tfoot\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "tfoot"
+        ]
       },
       {
         "name": "TableRow",
@@ -3381,7 +4185,13 @@
             "type": "React.ComponentProps<\"tr\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "tr"
+        ]
       },
       {
         "name": "TableHead",
@@ -3393,7 +4203,13 @@
             "type": "React.ComponentProps<\"th\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "th"
+        ]
       },
       {
         "name": "TableCell",
@@ -3405,7 +4221,13 @@
             "type": "React.ComponentProps<\"td\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "td"
+        ]
       },
       {
         "name": "TableCaption",
@@ -3417,7 +4239,13 @@
             "type": "React.ComponentProps<\"caption\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "caption"
+        ]
       }
     ],
     "classes": [],
@@ -3490,7 +4318,13 @@
             "type": "TabsPrimitive.Root.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "TabsPrimitive.Root"
+        ]
       },
       {
         "name": "TabsList",
@@ -3502,7 +4336,14 @@
             "type": "TabsPrimitive.List.Props & VariantProps<typeof tabsListVariants>"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn",
+          "tabsListVariants"
+        ],
+        "jsxElements": [
+          "TabsPrimitive.List"
+        ]
       },
       {
         "name": "TabsTrigger",
@@ -3514,7 +4355,13 @@
             "type": "TabsPrimitive.Tab.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "TabsPrimitive.Tab"
+        ]
       },
       {
         "name": "TabsContent",
@@ -3526,7 +4373,13 @@
             "type": "TabsPrimitive.Panel.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "TabsPrimitive.Panel"
+        ]
       }
     ],
     "classes": [],
@@ -3575,7 +4428,13 @@
             "type": "React.ComponentProps<\"textarea\">"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "textarea"
+        ]
       }
     ],
     "classes": [],
@@ -3633,7 +4492,11 @@
             "type": "TooltipPrimitive.Provider.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "TooltipPrimitive.Provider"
+        ]
       },
       {
         "name": "Tooltip",
@@ -3645,7 +4508,11 @@
             "type": "TooltipPrimitive.Root.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "TooltipPrimitive.Root"
+        ]
       },
       {
         "name": "TooltipTrigger",
@@ -3657,7 +4524,11 @@
             "type": "TooltipPrimitive.Trigger.Props"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [],
+        "jsxElements": [
+          "TooltipPrimitive.Trigger"
+        ]
       },
       {
         "name": "TooltipContent",
@@ -3669,7 +4540,16 @@
             "type": "TooltipPrimitive.Popup.Props &\n  Pick<\n    TooltipPrimitive.Positioner.Props,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >"
           }
         ],
-        "returnType": "any"
+        "returnType": "any",
+        "calls": [
+          "cn"
+        ],
+        "jsxElements": [
+          "TooltipPrimitive.Arrow",
+          "TooltipPrimitive.Portal",
+          "TooltipPrimitive.Positioner",
+          "TooltipPrimitive.Popup"
+        ]
       }
     ],
     "classes": [],

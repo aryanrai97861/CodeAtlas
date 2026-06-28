@@ -124,6 +124,21 @@ export class ASTParser {
     const functionDecls = sourceFile.getFunctions();
     for (const func of functionDecls) {
       const name = func.getName() || 'anonymous';
+      
+      const calls = new Set<string>();
+      func.getDescendantsOfKind(SyntaxKind.CallExpression).forEach(call => {
+        const expression = call.getExpression();
+        calls.add(expression.getText());
+      });
+
+      const jsxElements = new Set<string>();
+      func.getDescendantsOfKind(SyntaxKind.JsxSelfClosingElement).forEach(jsx => {
+        jsxElements.add(jsx.getTagNameNode().getText());
+      });
+      func.getDescendantsOfKind(SyntaxKind.JsxOpeningElement).forEach(jsx => {
+        jsxElements.add(jsx.getTagNameNode().getText());
+      });
+
       functions.push({
         name,
         isAsync: func.isAsync(),
@@ -132,7 +147,9 @@ export class ASTParser {
           name: p.getName(),
           type: p.getTypeNode()?.getText() || 'any'
         })),
-        returnType: func.getReturnTypeNode()?.getText() || 'any'
+        returnType: func.getReturnTypeNode()?.getText() || 'any',
+        calls: Array.from(calls),
+        jsxElements: Array.from(jsxElements)
       });
     }
 
@@ -144,16 +161,29 @@ export class ASTParser {
     const classDecls = sourceFile.getClasses();
 
     for (const cls of classDecls) {
-      const methods = cls.getMethods().map(m => ({
-        name: m.getName(),
-        isAsync: m.isAsync(),
-        isExported: false, // Class methods aren't exported individually
-        parameters: m.getParameters().map(p => ({
-          name: p.getName(),
-          type: p.getTypeNode()?.getText() || 'any'
-        })),
-        returnType: m.getReturnTypeNode()?.getText() || 'any'
-      }));
+      const methods = cls.getMethods().map(m => {
+        const calls = new Set<string>();
+        m.getDescendantsOfKind(SyntaxKind.CallExpression).forEach(call => {
+          calls.add(call.getExpression().getText());
+        });
+        
+        const jsxElements = new Set<string>();
+        m.getDescendantsOfKind(SyntaxKind.JsxSelfClosingElement).forEach(jsx => jsxElements.add(jsx.getTagNameNode().getText()));
+        m.getDescendantsOfKind(SyntaxKind.JsxOpeningElement).forEach(jsx => jsxElements.add(jsx.getTagNameNode().getText()));
+
+        return {
+          name: m.getName(),
+          isAsync: m.isAsync(),
+          isExported: false, // Class methods aren't exported individually
+          parameters: m.getParameters().map(p => ({
+            name: p.getName(),
+            type: p.getTypeNode()?.getText() || 'any'
+          })),
+          returnType: m.getReturnTypeNode()?.getText() || 'any',
+          calls: Array.from(calls),
+          jsxElements: Array.from(jsxElements)
+        };
+      });
 
       classes.push({
         name: cls.getName() || 'anonymous',

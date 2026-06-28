@@ -1,0 +1,462 @@
+{
+  "nodes": [
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/MainLayout.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/MainLayout.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/auth/ProtectedRoute.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/auth/ProtectedRoute.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/DashboardPage.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/DashboardPage.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/main.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/main.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/jobStore.ts",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/jobStore.ts"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/badge.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/badge.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/select.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/select.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/switch.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/switch.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/sheet.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/sheet.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/table.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/table.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/progress.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/progress.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/textarea.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/textarea.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Header.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Header.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/avatar.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/avatar.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dropdown-menu.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dropdown-menu.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Sidebar.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Sidebar.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/card.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/card.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dialog.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dialog.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/separator.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/separator.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/skeleton.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/skeleton.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tabs.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tabs.tsx"
+    },
+    {
+      "id": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tooltip.tsx",
+      "file": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tooltip.tsx"
+    }
+  ],
+  "edges": [
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/MainLayout.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/auth/ProtectedRoute.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/DashboardPage.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/main.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/App.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/DashboardPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/DashboardPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/jobStore.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/badge.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/select.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/switch.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/sheet.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/JobsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/LoginPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/badge.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/table.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RecruitersPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/RegisterPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/badge.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/progress.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/ResumePage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/switch.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/textarea.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/pages/SettingsPage.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/jobStore.ts",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/api.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/jobStore.ts",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/types/index.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/auth/ProtectedRoute.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Header.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Header.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/avatar.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Header.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dropdown-menu.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/MainLayout.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Sidebar.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/MainLayout.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Header.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/MainLayout.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/store/authStore.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/layout/Sidebar.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/avatar.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/badge.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/card.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dialog.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dialog.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/dropdown-menu.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/input.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/label.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/progress.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/select.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/separator.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/sheet.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/sheet.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/button.tsx"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/skeleton.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/switch.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/table.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tabs.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/textarea.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    },
+    {
+      "source": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/components/ui/tooltip.tsx",
+      "target": "C:/Users/aryan/OneDrive/Desktop/Important_Documents/Projects/job-aggregator/frontend/src/lib/utils.ts"
+    }
+  ]
+}

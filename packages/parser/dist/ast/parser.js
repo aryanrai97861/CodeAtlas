@@ -138,6 +138,18 @@ class ASTParser {
         const functionDecls = sourceFile.getFunctions();
         for (const func of functionDecls) {
             const name = func.getName() || 'anonymous';
+            const calls = new Set();
+            func.getDescendantsOfKind(ts_morph_1.SyntaxKind.CallExpression).forEach(call => {
+                const expression = call.getExpression();
+                calls.add(expression.getText());
+            });
+            const jsxElements = new Set();
+            func.getDescendantsOfKind(ts_morph_1.SyntaxKind.JsxSelfClosingElement).forEach(jsx => {
+                jsxElements.add(jsx.getTagNameNode().getText());
+            });
+            func.getDescendantsOfKind(ts_morph_1.SyntaxKind.JsxOpeningElement).forEach(jsx => {
+                jsxElements.add(jsx.getTagNameNode().getText());
+            });
             functions.push({
                 name,
                 isAsync: func.isAsync(),
@@ -146,7 +158,9 @@ class ASTParser {
                     name: p.getName(),
                     type: p.getTypeNode()?.getText() || 'any'
                 })),
-                returnType: func.getReturnTypeNode()?.getText() || 'any'
+                returnType: func.getReturnTypeNode()?.getText() || 'any',
+                calls: Array.from(calls),
+                jsxElements: Array.from(jsxElements)
             });
         }
         return functions;
@@ -155,16 +169,27 @@ class ASTParser {
         const classes = [];
         const classDecls = sourceFile.getClasses();
         for (const cls of classDecls) {
-            const methods = cls.getMethods().map(m => ({
-                name: m.getName(),
-                isAsync: m.isAsync(),
-                isExported: false, // Class methods aren't exported individually
-                parameters: m.getParameters().map(p => ({
-                    name: p.getName(),
-                    type: p.getTypeNode()?.getText() || 'any'
-                })),
-                returnType: m.getReturnTypeNode()?.getText() || 'any'
-            }));
+            const methods = cls.getMethods().map(m => {
+                const calls = new Set();
+                m.getDescendantsOfKind(ts_morph_1.SyntaxKind.CallExpression).forEach(call => {
+                    calls.add(call.getExpression().getText());
+                });
+                const jsxElements = new Set();
+                m.getDescendantsOfKind(ts_morph_1.SyntaxKind.JsxSelfClosingElement).forEach(jsx => jsxElements.add(jsx.getTagNameNode().getText()));
+                m.getDescendantsOfKind(ts_morph_1.SyntaxKind.JsxOpeningElement).forEach(jsx => jsxElements.add(jsx.getTagNameNode().getText()));
+                return {
+                    name: m.getName(),
+                    isAsync: m.isAsync(),
+                    isExported: false, // Class methods aren't exported individually
+                    parameters: m.getParameters().map(p => ({
+                        name: p.getName(),
+                        type: p.getTypeNode()?.getText() || 'any'
+                    })),
+                    returnType: m.getReturnTypeNode()?.getText() || 'any',
+                    calls: Array.from(calls),
+                    jsxElements: Array.from(jsxElements)
+                };
+            });
             classes.push({
                 name: cls.getName() || 'anonymous',
                 isExported: cls.isExported(),

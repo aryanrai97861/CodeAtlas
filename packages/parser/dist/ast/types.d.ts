@@ -31,6 +31,8 @@ export interface FunctionNode {
         type: string;
     }[];
     returnType: string;
+    calls: string[];
+    jsxElements: string[];
 }
 export interface ClassNode {
     name: string;

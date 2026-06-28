@@ -51,9 +51,22 @@ async function main() {
         const parsedFiles = JSON.parse(fs.readFileSync(analysisPath, 'utf-8'));
         const resolver = new resolver_js_1.SymbolResolver(parsedFiles, targetPath);
         const graph = resolver.resolve();
-        const outputPath = path.join(process.cwd(), 'graph.json');
-        fs.writeFileSync(outputPath, JSON.stringify(graph, null, 2));
-        console.log(`Analysis complete. Graph written to ${outputPath}`);
+        const { ImportGraphGenerator } = await import('./generators/import-graph.js');
+        const { CallGraphGenerator } = await import('./generators/call-graph.js');
+        const { ComponentGraphGenerator } = await import('./generators/component-graph.js');
+        const importGraph = new ImportGraphGenerator(graph).generate();
+        const callGraph = new CallGraphGenerator(graph).generate();
+        const componentGraph = new ComponentGraphGenerator(graph).generate();
+        const importPath = path.join(process.cwd(), 'import-graph.json');
+        const callPath = path.join(process.cwd(), 'call-graph.json');
+        const componentPath = path.join(process.cwd(), 'component-graph.json');
+        fs.writeFileSync(importPath, JSON.stringify(importGraph, null, 2));
+        fs.writeFileSync(callPath, JSON.stringify(callGraph, null, 2));
+        fs.writeFileSync(componentPath, JSON.stringify(componentGraph, null, 2));
+        console.log(`Analysis complete!`);
+        console.log(`- Import Graph written to ${importPath}`);
+        console.log(`- Call Graph written to ${callPath}`);
+        console.log(`- Component Graph written to ${componentPath}`);
     }
     else {
         console.log(`

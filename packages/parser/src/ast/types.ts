@@ -28,6 +28,8 @@ export interface FunctionNode {
   isExported: boolean;
   parameters: { name: string; type: string }[];
   returnType: string;
+  calls: string[];
+  jsxElements: string[];
 }
 
 export interface ClassNode {

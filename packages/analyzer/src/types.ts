@@ -1,6 +1,6 @@
 export interface SymbolNode {
   id: string;
-  type: 'function' | 'class' | 'interface' | 'variable' | 'type';
+  type: 'function' | 'class' | 'interface' | 'variable' | 'type' | 'file';
   name: string;
   file: string;
   isExported: boolean;

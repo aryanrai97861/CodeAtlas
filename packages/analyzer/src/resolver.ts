@@ -21,6 +21,15 @@ export class SymbolResolver {
     for (const file of this.parsedFiles) {
       const filePath = this.normalizePath(file.filePath);
       
+      // Register File Node
+      this.graph.nodes[filePath] = {
+        id: filePath,
+        type: 'file',
+        name: path.basename(filePath),
+        file: filePath,
+        isExported: true
+      };
+      
       // Register Functions
       for (const func of file.functions) {
         const id = `${filePath}::${func.name}`;
@@ -30,7 +39,7 @@ export class SymbolResolver {
           name: func.name,
           file: filePath,
           isExported: func.isExported,
-          metadata: { isAsync: func.isAsync, parameters: func.parameters, returnType: func.returnType }
+          metadata: { isAsync: func.isAsync, parameters: func.parameters, returnType: func.returnType, calls: func.calls, jsxElements: func.jsxElements }
         };
       }
 
@@ -90,19 +99,22 @@ export class SymbolResolver {
       const sourceFilePath = this.normalizePath(file.filePath);
       
       for (const imp of file.imports) {
-        // Only resolve local relative imports for now
-        if (imp.moduleSpecifier.startsWith('.')) {
+        // Resolve local relative imports and @/ aliases
+        if (imp.moduleSpecifier.startsWith('.') || imp.moduleSpecifier.startsWith('@/')) {
           const targetFilePath = this.resolvePath(sourceFilePath, imp.moduleSpecifier);
           if (!targetFilePath) continue;
+
+          // Always add a File -> File import edge
+          this.graph.edges.push({
+            sourceId: sourceFilePath,
+            targetId: targetFilePath,
+            relationship: 'imports'
+          });
 
           // For each named import, create an edge to the corresponding export node
           for (const namedImport of imp.namedImports) {
             const targetId = `${targetFilePath}::${namedImport.name}`;
-            
-            // If the target node exists in our graph, link it!
             if (this.graph.nodes[targetId]) {
-              // Create an edge from the file itself or we could map to exact function calls later.
-              // For now, representing an import dependency from File -> Node.
               this.graph.edges.push({
                 sourceId: sourceFilePath,
                 targetId: targetId,
@@ -116,8 +128,23 @@ export class SymbolResolver {
   }
 
   private resolvePath(sourceFilePath: string, moduleSpecifier: string): string | null {
-    const dir = path.dirname(sourceFilePath);
-    let target = path.resolve(dir, moduleSpecifier);
+    let target = '';
+    
+    if (moduleSpecifier.startsWith('@/')) {
+      // Heuristic: Find the nearest 'src' folder above this file
+      const parts = sourceFilePath.split('/');
+      const srcIndex = parts.lastIndexOf('src');
+      if (srcIndex !== -1) {
+        const srcPath = parts.slice(0, srcIndex + 1).join('/');
+        target = path.resolve(srcPath, moduleSpecifier.replace('@/', ''));
+      } else {
+        return null; // Can't resolve @/ if not in a src dir
+      }
+    } else {
+      const dir = path.dirname(sourceFilePath);
+      target = path.resolve(dir, moduleSpecifier);
+    }
+    
     target = this.normalizePath(target);
 
     // Try extensions
