@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "ts-morph": "^21.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@code-atlas/backend": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.10.6"

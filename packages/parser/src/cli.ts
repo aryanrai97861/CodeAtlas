@@ -36,6 +36,15 @@ async function main() {
       console.error('Parse failed:', error);
       process.exit(1);
     }
+  } else if (command === 'serve') {
+    console.log('Starting Code Atlas API Backend...');
+    try {
+      // Dynamically import backend to start server
+      await import('@code-atlas/backend');
+    } catch (error) {
+      console.error('Failed to start backend server:', error);
+      process.exit(1);
+    }
   } else {
     console.log(`
 Usage: code-atlas <command> [path]
@@ -43,6 +52,7 @@ Usage: code-atlas <command> [path]
 Commands:
   scan [path]    Scan repository and generate repository.json
   parse [path]   Parse repository and generate analysis.json
+  serve          Start backend API server
     `);
   }
 }
