@@ -57,16 +57,30 @@ async function main() {
         const importGraph = new ImportGraphGenerator(graph).generate();
         const callGraph = new CallGraphGenerator(graph).generate();
         const componentGraph = new ComponentGraphGenerator(graph).generate();
+        const { ReactAnalyzer } = await import('./frameworks/react.js');
+        const { ExpressAnalyzer } = await import('./frameworks/express.js');
+        const reactAnalysis = new ReactAnalyzer(graph).analyze();
+        const expressAnalysis = new ExpressAnalyzer(graph).analyze();
+        const frameworkAnalysis = {
+            react: reactAnalysis,
+            express: expressAnalysis
+        };
         const importPath = path.join(process.cwd(), 'import-graph.json');
         const callPath = path.join(process.cwd(), 'call-graph.json');
         const componentPath = path.join(process.cwd(), 'component-graph.json');
+        const frameworkPath = path.join(process.cwd(), 'framework-analysis.json');
+        const outputPath = path.join(process.cwd(), 'graph.json');
         fs.writeFileSync(importPath, JSON.stringify(importGraph, null, 2));
         fs.writeFileSync(callPath, JSON.stringify(callGraph, null, 2));
         fs.writeFileSync(componentPath, JSON.stringify(componentGraph, null, 2));
+        fs.writeFileSync(frameworkPath, JSON.stringify(frameworkAnalysis, null, 2));
+        fs.writeFileSync(outputPath, JSON.stringify(graph, null, 2));
         console.log(`Analysis complete!`);
         console.log(`- Import Graph written to ${importPath}`);
         console.log(`- Call Graph written to ${callPath}`);
         console.log(`- Component Graph written to ${componentPath}`);
+        console.log(`- Framework Analysis written to ${frameworkPath}`);
+        console.log(`- Updated Graph written to ${outputPath}`);
     }
     else {
         console.log(`
