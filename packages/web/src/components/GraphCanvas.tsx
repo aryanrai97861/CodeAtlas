@@ -10,16 +10,16 @@ export const GraphCanvas: React.FC = () => {
   const nodeTypes = useMemo(() => ({ custom: CustomNode }), []);
 
   return (
-    <div className="w-full h-screen bg-slate-950 relative">
+    <div className="w-full h-screen bg-slate-50 relative">
       {loading && (
-        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-slate-950/80 backdrop-blur-sm gap-3">
-          <Loader2 className="w-8 h-8 text-indigo-500 animate-spin" />
-          <p className="text-sm font-medium text-slate-300 animate-pulse">Loading architecture graph...</p>
+        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-white/80 backdrop-blur-sm gap-3">
+          <Loader2 className="w-8 h-8 text-pink-500 animate-spin" />
+          <p className="text-sm font-medium text-slate-800 animate-pulse">Loading architecture graph...</p>
         </div>
       )}
 
       {error && (
-        <div className="absolute top-28 left-1/2 -translate-x-1/2 z-20 bg-rose-500/10 border border-rose-500/20 text-rose-400 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3">
+        <div className="absolute top-28 left-1/2 -translate-x-1/2 z-20 bg-rose-50 border border-rose-200 text-rose-700 px-6 py-4 rounded-2xl shadow-xl flex items-center gap-3">
           <p className="text-sm font-semibold">{error}</p>
         </div>
       )}
@@ -33,25 +33,25 @@ export const GraphCanvas: React.FC = () => {
         onPaneClick={() => setSelectedNodeId(null)}
         nodeTypes={nodeTypes}
         fitView
-        className="bg-slate-950"
+        className="bg-slate-50"
         minZoom={0.1}
         maxZoom={2}
       >
-        <Background variant={BackgroundVariant.Dots} gap={24} size={2} color="#334155" />
-        <Controls className="!bg-slate-900 !border !border-slate-800 !rounded-xl !shadow-xl !overflow-hidden [&>button]:!bg-slate-900 [&>button]:!border-slate-800 [&>button]:!text-slate-300 hover:[&>button]:!bg-slate-800" />
+        <Background variant={BackgroundVariant.Dots} gap={24} size={2} color="#cbd5e1" />
+        <Controls className="!bg-white !border !border-slate-200 !rounded-xl !shadow-lg !overflow-hidden [&>button]:!bg-white [&>button]:!border-slate-200 [&>button]:!text-slate-700 hover:[&>button]:!bg-slate-50" />
         <MiniMap
-          className="!bg-slate-900 !border !border-slate-800 !rounded-2xl !shadow-2xl !p-2"
+          className="!bg-white !border !border-slate-200 !rounded-2xl !shadow-xl !p-2"
           nodeColor={(node: any) => {
             switch (node.data?.type) {
-              case 'file': return '#34d399';
+              case 'file': return '#10b981';
               case 'react_component': return '#06b6d4';
               case 'express_middleware':
               case 'express_controller': return '#d946ef';
-              case 'class': return '#60a5fa';
-              default: return '#818cf8';
+              case 'class': return '#3b82f6';
+              default: return '#ec4899';
             }
           }}
-          maskColor="rgba(15, 23, 42, 0.7)"
+          maskColor="rgba(248, 250, 252, 0.7)"
         />
       </ReactFlow>
     </div>

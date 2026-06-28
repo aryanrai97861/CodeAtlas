@@ -13,7 +13,7 @@ export const App: React.FC = () => {
   }, [fetchGraphData]);
 
   return (
-    <main className="w-screen h-screen overflow-hidden bg-slate-950 flex flex-col relative select-none">
+    <main className="w-screen h-screen overflow-hidden bg-slate-50 flex flex-col relative select-none">
       <Navigation />
       <GraphCanvas />
       <NodeSidebar />
